@@ -1,0 +1,1 @@
+{{if .IsSigned }}{{ if ne .SignedUser.Theme "gitea" }}-{{.SignedUser.Theme | PathEscape}}{{end}}{{else if ne DefaultTheme "gitea"}}-{{DefaultTheme | PathEscape}}{{end}}
